@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loc-button {
+            outline: none;
+            width: 100%;
+            border: none;
+            font-weight: 700;
+            border-radius: 25px;
+            padding: 10px;
+            background: #303f9f;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+            transition: all 0.3s ease;
+        }
+
+        .loc-button:hover {
+            background: #1a237e;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tombWA"><a class='loc-button' onClick='bukaWa();'>Kirim Pesan</a></div>
+    <script>
+        function bukaWa() { window.location = "https://api.whatsapp.com/send?phone=+6281211302845&text=" +  "Aku udah liat semuanya. Iya aa kali ini aku kasi jatah ya" + "%0A%0A" + "Btw makasih udah ngucapin ><"; } 
+    </script>
+</body>
+
+</html>
